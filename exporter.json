@@ -3,7 +3,7 @@
   "name": "Yggdrasil Flutter",
   "description": "Yggdrasil Flutter token and style exporter",
   "source_dir": "src",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "tags": ["Flutter", "Dart", "Tokens", "Styles"],
   "author": "Yggdrasil Team",
   "organization": "Futurehome",
