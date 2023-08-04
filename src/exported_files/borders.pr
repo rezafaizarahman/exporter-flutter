@@ -16,7 +16,7 @@ class FhBorders {
   {[/]}
   static const Border {{ fullTokenName }} = Border.fromBorderSide(BorderSide(
     color: {[ inject "export_color_value" context borderToken.value.color /]},
-    width: {[ inject "export_measure_value" context borderToken.value.width /]},
+    width: {[ inject "export_measure_value" context borderToken.value.width /]}.0,
   ));
 
   {[/]}
