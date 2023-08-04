@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AppBorderSides {
+class FhBorderSides {
+  const FhBorderSides._();
 
 {[ let brand = ds.currentBrand() /]}
 {[ const borderTokensTree = ds.tokenGroupTreeByType("Border", brand.id) /]}
@@ -13,12 +14,11 @@ class AppBorderSides {
   {[ if (borderToken.description && borderToken.description !== "") ]}
 {{ createDocumentationComment(borderToken.description, "  ") }}
   {[/]}
-  static const {{ fullTokenName }} = BorderSide(
+  static const BorderSide {{ fullTokenName }} = BorderSide(
     color: {[ inject "export_color_value" context borderToken.value.color /]},
-    width: {[ inject "export_measure_value" context borderToken.value.width /]},
+    width: {[ inject "export_measure_value" context borderToken.value.width /]}.0,
   );
 
   {[/]}
 {[/]}
-  AppBorderSides._();
 }
